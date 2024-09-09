@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap" rel="stylesheet">
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <title>Kyung Joo DS400</title>
+  </head>
+  
+  <body>
+      
+    <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>  
+      
+    <script>javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();stats.showPanel( 0 );stats.domElement.style.cssText = 'position:absolute;top:0px;left:0px;';document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()</script>
+    
+    <script>javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();stats.showPanel( 1 );stats.domElement.style.cssText = 'position:absolute;top:0px;left:80px;';document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()</script>
+    
+    <script>javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();stats.showPanel( 2 );stats.domElement.style.cssText = 'position:absolute;top:0px;left:160px;';document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()</script>
+      
+    <div class="rightnav">  
+    <div class="info">
+        <h2>
+        WASD to move | Mouse to view | ESC to cancel
+             
+        </h2>
+        
+        <h1>
+        <span style="font-family: Kode; font-size: 18px;">"ARCHIVING-OF"</span> Landscape Memories
+        </h1>
+
+        <p id="textanim"></p>
+        
+        <br>
+
+        
+
+
+
+        
+    </div>   
+    </div> 
+      
+    <audio controls loop>
+        <source src="audio/Seagull.mp3" type="audio/mp3">
+    </audio>   
+      
+    <div class="scene"></div>
+    <script src=js/three.min.js></script>
+    <script src=js/GLTFLoader.js></script>
+    <script src=js/OrbitControls.js></script>
+    <script src=js/PointerLockControls.js></script>
+    <script src=js/main7.js></script>
+
+    <script>
+      var app = document.getElementById('textanim');
+
+      var typewriter = new Typewriter(app, {
+          loop: true,
+          delay: 5,
+      });
+
+      typewriter.typeString('NOVEMBER 24, 2020 THE DAY IS WARM THE NIGHT IS BRISK')
+          .pauseFor(250000)
+          .deleteAll()
+          .start();
+  </script>
+    
+      
+  </body>
+</html>
